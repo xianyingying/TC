@@ -1,0 +1,10 @@
+{
+  "userNameLocate":"//input[@placeholder='请输入用户名/手机号']",
+  "passwordLocate":"//input[@placeholder='请输入密码']",
+  "loginButtonLocate":"u'div.login-btn'",
+  "URL":"http://m.tctest3.com/login",
+  "userName":"account01",
+  "userPwd":"123456",
+  "messageLocate":"//div[@class='vux-toast']/div[2]/p",
+  "expected":"登录成功"
+}
