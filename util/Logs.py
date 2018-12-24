@@ -14,7 +14,7 @@ class Logger(object):
         :param logger:
         """
         try:
-            File_Path ="D:/pythonLearn/tctestpro/H5/report/logs/"
+            File_Path ="D:/TC/H5/report/logs/"
             if not os.path.exists(File_Path):
                 os.makedirs(File_Path)
         except BaseException as msg:
@@ -28,8 +28,8 @@ class Logger(object):
         # 日志记录的工作主要由Logger对象来完成。在调用getLogger时要提供Logger的名称（注：多次使用相同名称 来调用getLogger，返回的是同一个对象的引用。）
         self.logger = logging.getLogger(logger)
         self.logger.setLevel(logging.DEBUG)
-        log_path ='D:/pythonLearn/tctestpro/H5/report/logs/'
-        print(log_path)
+        log_path ='D:/TC/H5/report/logs/'
+        #print(log_path)
         # 创建一个handler，用于写入日志文件
         rq = time.strftime('%Y%m%d%H%M', time.localtime(time.time()))
         log_name = log_path + rq + '.log'  # 文件名
